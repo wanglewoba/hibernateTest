@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="SessionFactory">
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">41gcsp_dev</property>
+        <property name="hibernate.connection.url">jdbc:mysql://10.143.108.41:3306/gcsp_dev</property>
+        <property name="hibernate.connection.username">gcsp_dev</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        
+         <!-- Mapping files -->
+        <mapping resource="test2/bean/LJuser.hbm.xml"/>
+        <mapping resource="test2/bean/TBusiApprTdEvent.hbm.xml"/>
+        <mapping resource="test2/bean/TBusiApprTdEventRules.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

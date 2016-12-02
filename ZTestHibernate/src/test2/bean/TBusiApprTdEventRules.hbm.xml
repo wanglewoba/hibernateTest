@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-6-2 14:50:55 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="test2.bean.TBusiApprTdEventRules" table="T_BUSI_APPR_TD_EVENT_RULES" catalog="gcsp_dev">
+        <id name="uuid" type="string">
+            <column name="UUID" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="loanid" type="string">
+            <column name="LOANID" length="32" not-null="true">
+                <comment>&#210;&#181;&#206;&#241;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="policyUuid" type="string">
+            <column name="POLICY_UUID" length="50" not-null="true">
+                <comment>&#185;&#230;&#212;&#242;ID</comment>
+            </column>
+        </property>
+        <property name="decision" type="string">
+            <column name="DECISION" length="20">
+                <comment>&#190;&#246;&#178;&#223;</comment>
+            </column>
+        </property>
+        <property name="score" type="big_decimal">
+            <column name="SCORE" precision="10" scale="4">
+                <comment>&#181;&#195;&#183;&#214;</comment>
+            </column>
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="200">
+                <comment>&#185;&#230;&#212;&#242;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

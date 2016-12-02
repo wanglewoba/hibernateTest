@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-6-2 14:50:55 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="test2.bean.TBusiApprTdEvent" table="T_BUSI_APPR_TD_EVENT" catalog="gcsp_dev">
+        <id name="keyno" type="string">
+            <column name="KEYNO" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="loanid" type="string">
+            <column name="LOANID" length="32" not-null="true">
+                <comment>&#210;&#181;&#206;&#241;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="policyUuid" type="string">
+            <column name="POLICY_UUID" length="50">
+                <comment>&#178;&#223;&#194;&#212;&#206;&#168;&#210;&#187;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="policyDecision" type="string">
+            <column name="POLICY_DECISION" length="20">
+                <comment>&#185;&#230;&#212;&#242;&#189;&#225;&#185;&#251;</comment>
+            </column>
+        </property>
+        <property name="policyScore" type="big_decimal">
+            <column name="POLICY_SCORE" precision="10" scale="4">
+                <comment>&#185;&#230;&#212;&#242;&#181;&#195;&#183;&#214;</comment>
+            </column>
+        </property>
+        <property name="policyName" type="string">
+            <column name="POLICY_NAME" length="100">
+                <comment>&#185;&#230;&#212;&#242;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="riskType" type="string">
+            <column name="RISK_TYPE" length="100">
+                <comment>&#183;&#231;&#207;&#213;&#192;&#224;&#208;&#205;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>
